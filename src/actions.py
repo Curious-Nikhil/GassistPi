@@ -145,7 +145,7 @@ def say(words):
     print(words)
     tts = gTTS(text=words, lang=language)
     tts.save(ttsfilename)
-    os.system("mpg123 "+ttsfilename)
+    os.system("mplayer "+ttsfilename)
     os.remove(ttsfilename)
 
 
